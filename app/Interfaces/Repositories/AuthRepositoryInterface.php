@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interfaces\Interfaces\Repositories;
+namespace App\Interfaces\Repositories;
 
 interface AuthRepositoryInterface
 {
