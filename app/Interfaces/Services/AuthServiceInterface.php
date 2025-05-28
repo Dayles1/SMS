@@ -2,7 +2,7 @@
 
 namespace App\Interfaces\Services;
 
-interface AuthServiceInterfcae
+interface AuthServiceInterface
 {
     //
 }
