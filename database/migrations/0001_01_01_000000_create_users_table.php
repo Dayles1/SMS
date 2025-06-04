@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('last_name');
             $table->string('phone')->unique();
-            $table->boolean('is_verefied')->default(false);
+            $table->boolean('is_verified')->default(false);
             $table->string('code',5)->nullable();
-            $table->timestamp('expire_at')->nullable();
+            $table->timestamp('expires_at')->nullable();
 
             $table->rememberToken();
             $table->timestamps();
