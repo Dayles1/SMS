@@ -16,9 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('last_name');
             $table->string('phone')->unique();
-            $table->timestamp('is_verefied')->nullable();
+            $table->boolean('is_verefied')->default(false);
             $table->string('code',5)->nullable();
-            
+            $table->timestamp('expire_at')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });
